@@ -2,7 +2,7 @@
 
 ##Prepare
 
-###Node.js
+###I. Node.js
 
 > solve `npm` permission problem.<br>
 > [Detail](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
@@ -39,10 +39,10 @@ ln -s [relative path to Blog/public] profile
 
 ##Blog Information
 
-###Main
+###I. Main
 >[hexo](https://github.com/hexojs/hexo/)
 
-###Themes
+###II. Themes
 >[next](https://github.com/iissnan/hexo-theme-next)
 
 ##Debug log
