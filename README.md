@@ -18,6 +18,7 @@ git clone https://github.com/neilChenXie/ChenBlog.git Blog
 npm install
 #get next
 git clone https://github.com/iissnan/hexo-theme-next themes/next
+cp themes/config_backup/next_config.txt themes/next/_config.yml
 hexo clean
 hexo generate
 ```
