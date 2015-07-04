@@ -10,8 +10,14 @@
 ##Install
 
 ```bash
+#install hexo
+npm install hexo -g
+npm install hexo-cli -g
+#get main
 git clone https://github.com/neilChenXie/ChenBlog.git Blog
 npm install
+#get next
+git clone https://github.com/iissnan/hexo-theme-next themes/next
 hexo clean
 hexo generate
 ```
