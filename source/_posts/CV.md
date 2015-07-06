@@ -1,8 +1,8 @@
 title: CV
 date: 2015-07-03 15:38:08
 tags: [CV, Geek, Overview]
+categories: [CV]
 ---
-#CV
 
 ##TimeLine
 
@@ -51,63 +51,79 @@ tags: [CV, Geek, Overview]
 |Data Science||||
 ||MapReduce based Pearson similarity calculation||[Detail]()|
 
-#*More*
-
-
+##*Details*
 
 ___
+
 ###*Environment Detail*
 ___
 
 <a name="Linux"></a>
-##Linux (CLI)
-####keyworlds:[experience](#Linux_exp), [command](#Linux_com), [tools](#Linux_tool)
 
-   <a name="Linux_exp"></a>
+####Linux (CLI)
 
-###Experience & Tricks
+#####Experience & Tricks
 
 * *configuration is normally under `/etc/`*
 
     * bash configuration
         >`/etc/rc.local` for every booting<br>
-        >`/etc/profile` for all users<br>`~/.bash_profile` for login users
-        >>* `export PATH` ubuntu/mac
-        >>* `setenv PATH` for unix
+        `/etc/profile` for all users<br>`~/.bash_profile` for login users<br>
+        > `export PATH` ubuntu/mac<br>
+         `setenv PATH` for unix
 
 * Port transfer
->  based on `iptable` in `/etc/rc.local` which runs at the **end** of booting.
->  `iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000`
+  * based on `iptable` in `/etc/rc.local` which runs at the **end** of booting.
+  > `iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000`
+
 * Run in the background with CLI
-> `nohup` command `&`
+  * `nohup` command `&`
 
-   <a name="Linux_com"></a>
-
-###Command
+#####Command
 
 * scp
-    >`scp /path/to/local/file username@hostname:/path/to/remote/file`<br>
-      `scp username1@hostname1:/path/to/file username2@hostname2:/path/to/other/file`<br>
-      `scp username@hostname:/path/to/remote/file /path/to/local/file`
-* tar
->uncompress:<br> `tar xvjf <file.tar.gz2>`<br>`tar xvzf <file.tar.gz>`<br>
-compress:<br>`tar cvjf <file.tar.gz2>`<br>`tar cvzf <file.tar.gz>`
 
+    * auto-recognization
+    ```bash
+    #upload
+    scp /path/to/local/file username@hostname:/path/to/remote/file
+    #transfer
+    scp username1@hostname1:/path/to/file username2@hostname2:/path/to/other/file
+    #download
+    scp username@hostname:/path/to/remote/file /path/to/local/file
+    ```
+
+* tar
+
+  * uncompress:
+  ```bash
+    tar xvjf <file.tar.gz2>
+    tar xvzf <file.tar.gz>
+  ```
+
+  * compress:
+  ```bash
+    tar cvjf <file.tar.gz2>
+    tar cvzf <file.tar.gz>
+  ```
 * chmod
->r:4 w:2 x:1<br>u/g/a + r/w/x
+
+  * r:4 w:2 x:1<br>u/g/a + r/w/x
+
 * tail
->`-f` to periodically read file
+  * `-f` to periodically read file
+
 * xargs
+
 * find
->* work with `rm` & `xargs`:
-```
-find /home/raven -name abc.txt | xargs rm -rf
-```
+  * work with `rm` & `xargs`:
+
+    ```bash
+    find /home/raven -name abc.txt | xargs rm -rf
+    ```
 * awk
 
-   <a name="Linux_tool"></a>
-
-###Tools
+#####Tools
 
  * VIM
      * Settings
@@ -130,72 +146,84 @@ find /home/raven -name abc.txt | xargs rm -rf
  * GDB
  * Git
      * Download & Update
-        > `git clone` URL<br>
-        > `git remote add` newName URL<br>
-        > `git fetch` newname(origin)
-        > `git merge` newname(origin)/master
+
+        >`git clone` URL<br>
+        `git remote add` newName URL<br>
+        `git fetch` newname(origin)
+        `git merge` newname(origin)/master
+
      * Conflict
+
         > Get more information `git config --global alias.conflicts "diff --name-only --diff-filter=U"`
+
      * Delete
-        >* `git rm` Delete cache and disk
-        >* `git rm --cache` Delete cache only
+
+        > `git rm` Delete cache and disk<br> `git rm --cache` Delete cache only
+
      * Add & Commit
+
         >`.gitignore` file to specify which **file** or  **folder** is not included
-        >`git add . / git commit -m ` as usual
+        `git add . / git commit -m ` as usual
+
      * recover
+
         >`git log` list all commit log to check<br>
-        >`git checkout 0d1d7fc32` go back to where you want
+        `git checkout 0d1d7fc32` go back to where you want
+
      * Branch
-        > git checkout -b newName #create new Branch
-        > git checkout master #back to master
-        > git merge newName #merge to master
-        > git branch -d #delete after merge, -D forced
-        > git branch -v #last modification time
+
+        >`git checkout -b` newName #create new Branch<br>
+         `git checkout master` #back to master<br>
+         `git merge` newName #merge to master<br>
+         `git branch -d` #delete after merge, `-D` forced<br>
+         `git branch -v` #last modification time
 
 <a name="OSX"></a>
 
-## OSX
+#### OSX
 
-###Tools
+#####Tools
 
 * homebrew
 
-    *it manage all `/usr/local/` packages*
-> * install package path: `/usr/local/Cellar/`
-> * `brew update` update homebrew itself
-> * `brew upgrade` update installed package
+    * it manage all `/usr/local/` packages*
+    > * install package path: `/usr/local/Cellar/`
+      * `brew update` update homebrew itself
+      * `brew upgrade` update installed package
 
-###Setting
+#####Setting
+
 * auto-completion
->* BASH:
+  * BASH:
     1. `brew install bash-completion`
     2. add to .bash_profile
-```bash
+    ```bash
             if [ -f $(brew --prefix)/etc/bash_completion ]; then
                 . $(brew --prefix)/etc/bash_completion
             fi
-```
-> * git:
-```bash
+            ```
+ * Git:
+    1. enter the command blow:
+    ```bash
            cp ~/CLI/Template/BASH/git-completion.bash ~/.git-completion.bash
            echo 'source ~/.git-completion.bash' >> ~/.bash_profile
-```
+    ```
 
 * atom
-  * tricks
-  >* `crtl + shift + m` markdown file preview
+  * tricks:<br>
+    * `crtl + shift + m` markdown file preview
+
 <a name="Windows"></a>
 
-## Windows
-
-
+#### Windows
 
 ___
+
 ###*Project Detail*
 ___
 
 <a name="BSS"></a>
-## Bike Safety System
+#### Bike Safety System
 
 <a name="Weenix"></a>
-## Weenix
+#### Weenix

@@ -1,10 +1,8 @@
 title: Life Exp
 date: 2015-07-03 15:35:41
 tags: [Life, Overview]
-categories: [Life, Overview]
+categories: [Life]
 ---
-
-# Chen Xie
 
 ## Sports
 
