@@ -53,9 +53,14 @@ ln -s [relative path to Blog/public] profile
 >[next](https://github.com/iissnan/hexo-theme-next)
 
 ##Debug log
+* 7/6/2015
+    * add photo
+
+    > put `photo` folder under `source` folder (it will be copied to public)<br>
+    link: `/profile/photo/photoName.jpg`
 
 * 7/3/2015
-    * configure themes/next/_config.md
+    * configure `themes/next/_config.md`
 
     > change `/tags` to `tags`, same with `category`,`about`...<br>
     > otherwise, they won't change based on blog **root** config

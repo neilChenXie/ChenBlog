@@ -6,6 +6,6 @@ categories: [LA]
 
 ###American Independent Day.
 
-![firework](http://imglf1.ph.126.net/_4_T2owvb03VSC3FoS7B1A==/6619260110329010128.jpg)
+![firework](/profile/photo/20150704.JPG)
 
 Enjoy the moment, not the photo.
