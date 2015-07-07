@@ -53,6 +53,10 @@ ln -s [relative path to Blog/public] profile
 >[next](https://github.com/iissnan/hexo-theme-next)
 
 ##Debug log
+
+* 7/7/2015
+	* change to /blog
+
 * 7/6/2015
     * add photo
 
