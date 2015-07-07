@@ -125,15 +125,26 @@ ___
 
 #####Tools
 
- * VIM
+* Screen
+    * split terminal into multi windows
+        >[reference](http://aperiodic.net/screen/quick_reference)
+
+    * Tricks:
+        >`C-a S` split<br>
+        `C-a c` create<br>
+        `C-a :resize 10` resize
+
+* Vim
      * Settings
- >* `/etc/vim/vimrc`
- >* `~/.vim/vimrc`
+ > `/etc/vim/vimrc`<br>
+  `~/.vim/vimrc`
+
      * Plugin
- >* `solarized` colorscheme
- >* `syntastic` syntax check
- >* `YouCompleteMe` autocomplete
- >* `Taglist/Ctags/Cscope` tags
+ > `solarized` colorscheme<br>
+  `syntastic` syntax check<br>
+  `YouCompleteMe` autocomplete<br>
+  `Taglist/Ctags/Cscope` tags
+
      * Command:
  >* search and replace:
          * Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.<br>
@@ -143,8 +154,8 @@ ___
           * Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.<br>
           `:%s/foo/bar/gci`
 
- * GDB
- * Git
+* GDB
+* Git
      * Download & Update
 
         >`git clone` URL<br>
