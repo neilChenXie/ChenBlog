@@ -63,19 +63,29 @@ ___
   * bash configuration
 
     >file:<br>
-    `/etc/rc.local` for every booting<br>
-    `/etc/profile` for all users<br>
-    `~/.bash_profile` for login users<br>
+    ```bash
+    #for every booting
+    /etc/rc.local
+    #for all users
+    /etc/profile
+    #for login users
+    ~/.bash_profile
+    ```
     use:<br>
-    `export PATH` ubuntu/mac<br>
-    `setenv PATH` for unix
-
+    ```bash
+    #ubuntu/mac
+    export PATH
+    #unix
+    setenv PATH
+    ```
 * Port transfer
 
   * based on `iptable` in `/etc/rc.local` which runs at the **end** of booting.
 
     >code:<br>
-    `iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000`
+    ```bash
+    iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000
+    ```
 
 * Run in the background with CLI
 
