@@ -62,7 +62,8 @@ ___
 
   * bash configuration
 
-    >`/etc/rc.local` for every booting<br>
+    >
+    `/etc/rc.local` for every booting<br>
     `/etc/profile` for all users<br>`~/.bash_profile` for login users<br>
     `export PATH` ubuntu/mac<br>
     `setenv PATH` for unix
@@ -71,7 +72,8 @@ ___
 
   * based on `iptable` in `/etc/rc.local` which runs at the **end** of booting.
 
-    > `iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000`
+    >
+    `iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000`
 
 * Run in the background with CLI
 
@@ -85,7 +87,8 @@ ___
 
   * in case of **boot-block script**
 
-    >```bash
+    >
+    ```bash
     #make executable
     chmod +x $filename
     #create
@@ -100,7 +103,8 @@ ___
 
   * auto-recognization
 
-    >```bash
+    >
+    ```bash
     #upload
     scp /path/to/local/file username@hostname:/path/to/remote/file
     #transfer
@@ -113,7 +117,8 @@ ___
 
   * uncompress:
 
-    >```bash
+    >
+    ```bash
     tar xvjf <file.tar.gz2>
     tar xvzf <file.tar.gz>
     ```
