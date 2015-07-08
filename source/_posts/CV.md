@@ -284,10 +284,12 @@ ___
 
   * it manage all `/usr/local/` packages*
 
-    >install package path: `/usr/local/Cellar/`<br>
-    `brew doctor` at the beginning<br>
-    `brew update` update homebrew itself<br>
-    `brew upgrade` update installed package
+    >install package path: `/usr/local/Cellar/`
+    ```bash
+    brew doctor #at the beginning
+    brew update #update homebrew itself
+    brew upgrade #update installed package
+    ```
 
 #####Setting
 
@@ -295,9 +297,10 @@ ___
 
   * BASH:
 
-    >`brew install bash-completion`<br>
-    add to .bash_profile
+    >auto-completion:
     ```bash
+    brew install bash-completion
+    #add to .bash_profile
     if [ -f $(brew --prefix)/etc/bash_completion ]; then
         . $(brew --prefix)/etc/bash_completion
     fi
@@ -311,9 +314,9 @@ ___
     echo 'source ~/.git-completion.bash' >> ~/.bash_profile
     ```
 
-* atom
+* Atom editor
 
-  * tricks:<br>
+  * tricks:
 
     > `crtl + shift + m` markdown file preview
 
