@@ -67,10 +67,10 @@ ___
 * *configuration is normally under `/etc/`*
 
     * bash configuration
-        >`/etc/rc.local` for every booting<br>
-        `/etc/profile` for all users<br>`~/.bash_profile` for login users<br>
-        > `export PATH` ubuntu/mac<br>
-         `setenv PATH` for unix
+    >`/etc/rc.local` for every booting<br>
+    `/etc/profile` for all users<br>`~/.bash_profile` for login users<br>
+    `export PATH` ubuntu/mac<br>
+    `setenv PATH` for unix
 
 * Port transfer
   * based on `iptable` in `/etc/rc.local` which runs at the **end** of booting.
@@ -79,12 +79,25 @@ ___
 * Run in the background with CLI
   * `nohup` command `&`
 
+* start when bootup BeagleBone
+  * `linux_config/chennode.sh` which should be put under `/etc/init.d/`
+  * [init-script-template](https://github.com/fhd/init-script-template)
+  * in case of **boot-block script**
+    >```bash
+    #make executable
+    chmod +x $filename
+    #create
+    update-rc.d $filename defaults
+    #delete
+    update-rc.d -f $filename remove
+    ```
+
 #####Command
 
 * scp
 
     * auto-recognization
-    ```bash
+    >```bash
     #upload
     scp /path/to/local/file username@hostname:/path/to/remote/file
     #transfer
@@ -96,31 +109,37 @@ ___
 * tar
 
   * uncompress:
-  ```bash
+  >```bash
     tar xvjf <file.tar.gz2>
     tar xvzf <file.tar.gz>
   ```
 
   * compress:
-  ```bash
+  >```bash
     tar cvjf <file.tar.gz2>
     tar cvzf <file.tar.gz>
   ```
+
 * chmod
 
-  * r:4 w:2 x:1<br>u/g/a + r/w/x
+  * change access
+  >r:4 w:2 x:1<br>u/g/a + r/w/x
 
 * tail
-  * `-f` to periodically read file
+  * check log file
+  >```bash
+  #periodically
+  tail -f $logfile
+  ```
 
 * xargs
 
 * find
   * work with `rm` & `xargs`:
-
-    ```bash
+    >```bash
     find /home/raven -name abc.txt | xargs rm -rf
     ```
+
 * awk
 
 #####Tools
@@ -198,31 +217,32 @@ ___
 * homebrew
 
     * it manage all `/usr/local/` packages*
-    > * install package path: `/usr/local/Cellar/`
-      * `brew update` update homebrew itself
-      * `brew upgrade` update installed package
+    >install package path: `/usr/local/Cellar/`<br>
+    `brew doctor` at the beginning<br>
+    `brew update` update homebrew itself<br>
+    `brew upgrade` update installed package
 
 #####Setting
 
 * auto-completion
   * BASH:
-    1. `brew install bash-completion`
-    2. add to .bash_profile
+    >`brew install bash-completion`<br>
+    add to .bash_profile
     ```bash
-            if [ -f $(brew --prefix)/etc/bash_completion ]; then
-                . $(brew --prefix)/etc/bash_completion
-            fi
-            ```
+    if [ -f $(brew --prefix)/etc/bash_completion ]; then
+        . $(brew --prefix)/etc/bash_completion
+    fi
+    ```
  * Git:
-    1. enter the command blow:
+    >enter the command blow:
     ```bash
-           cp ~/CLI/Template/BASH/git-completion.bash ~/.git-completion.bash
-           echo 'source ~/.git-completion.bash' >> ~/.bash_profile
+    cp ~/CLI/Template/BASH/git-completion.bash ~/.git-completion.bash
+    echo 'source ~/.git-completion.bash' >> ~/.bash_profile
     ```
 
 * atom
   * tricks:<br>
-    * `crtl + shift + m` markdown file preview
+    > `crtl + shift + m` markdown file preview
 
 <a name="Windows"></a>
 
