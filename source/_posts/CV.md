@@ -125,7 +125,8 @@ ___
 
   * compress:
 
-    >```bash
+    >
+    ```bash
     tar cvjf <file.tar.gz2>
     tar cvzf <file.tar.gz>
     ```
