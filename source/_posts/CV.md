@@ -132,6 +132,7 @@ ___
     >r:4 w:2 x:1<br>u/g/a + r/w/x
 
 * tail
+
   * check log file
 
     >```bash
@@ -140,6 +141,8 @@ ___
     ```
 
 * xargs
+
+  * TBA
 
 * find
 
@@ -150,6 +153,8 @@ ___
     ```
 
 * awk
+
+  * TBA
 
 #####Tools
 
