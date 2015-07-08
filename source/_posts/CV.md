@@ -62,9 +62,11 @@ ___
 
   * bash configuration
 
-    >
+    >file:<br>
     `/etc/rc.local` for every booting<br>
-    `/etc/profile` for all users<br>`~/.bash_profile` for login users<br>
+    `/etc/profile` for all users<br>
+    `~/.bash_profile` for login users<br>
+    use:<br>
     `export PATH` ubuntu/mac<br>
     `setenv PATH` for unix
 
@@ -72,7 +74,7 @@ ___
 
   * based on `iptable` in `/etc/rc.local` which runs at the **end** of booting.
 
-    >
+    >code:<br>
     `iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000`
 
 * Run in the background with CLI
@@ -87,7 +89,7 @@ ___
 
   * in case of **boot-block script**
 
-    >
+    >code:<br>
     ```bash
     #make executable
     chmod +x $filename
@@ -103,7 +105,7 @@ ___
 
   * auto-recognization
 
-    >
+    >code:<br>
     ```bash
     #upload
     scp /path/to/local/file username@hostname:/path/to/remote/file
@@ -117,7 +119,7 @@ ___
 
   * uncompress:
 
-    >
+    >code:<br>
     ```bash
     tar xvjf <file.tar.gz2>
     tar xvzf <file.tar.gz>
@@ -125,7 +127,7 @@ ___
 
   * compress:
 
-    >
+    >code:<br>
     ```bash
     tar cvjf <file.tar.gz2>
     tar cvzf <file.tar.gz>
@@ -135,14 +137,14 @@ ___
 
   * change access
 
-    >
+    >detail:<br>
     r:4 w:2 x:1<br>u/g/a + r/w/x
 
 * tail
 
   * check log file
 
-    >
+    >code:<br>
     ```bash
     #periodically
     tail -f $logfile
@@ -156,7 +158,7 @@ ___
 
   * work with `rm` & `xargs`:
 
-    >
+    >code:<br>
     ```bash
     find /home/raven -name abc.txt | xargs rm -rf
     ```
@@ -168,33 +170,40 @@ ___
 #####Tools
 
 * Screen
-    * split terminal into multi windows
-        >[reference](http://aperiodic.net/screen/quick_reference)
 
-    * Tricks:
-        >`C-a S` split<br>
-        `C-a c` create<br>
-        `C-a :resize 10` resize
+  * split terminal into multi windows
+
+    >[reference](http://aperiodic.net/screen/quick_reference)
+
+  * Tricks:
+
+    >shortcut:<br>
+    `C-a S` split<br>
+    `C-a c` create<br>
+    `C-a :resize 10` resize
 
 * Vim
-     * Settings
- > `/etc/vim/vimrc`<br>
-  `~/.vim/vimrc`
+  * Settings
+    >file:<br>
+    `/etc/vim/vimrc`<br>
+    `~/.vim/vimrc`
 
-     * Plugin
- > `solarized` colorscheme<br>
-  `syntastic` syntax check<br>
-  `YouCompleteMe` autocomplete<br>
-  `Taglist/Ctags/Cscope` tags
+  * Plugin
+    > name:<br>
+    `solarized` colorscheme<br>
+    `syntastic` syntax check<br>
+    `YouCompleteMe` autocomplete<br>
+    `Taglist/Ctags/Cscope` tags
 
-     * Command:
- >* search and replace:
-         * Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.<br>
-         `:%s/foo/bar/g`
-         * Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.<br>
-         `:s/foo/bar/g`
-          * Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.<br>
-          `:%s/foo/bar/gci`
+  * Command:
+
+    >search and replace:<br>
+    Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.<br>
+    `:%s/foo/bar/g`<br>
+    Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.<br>
+    `:s/foo/bar/g`<br>
+    Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.<br>
+    `:%s/foo/bar/gci`
 
 * GDB
 * Git
