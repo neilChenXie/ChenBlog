@@ -13,11 +13,13 @@ categories: [CV]
 |  **Finished** | | | |
 |2015.2-2015.5|**Bike Safety System**| |[Detail](#BSS)|
 |2014.10-2014.12|**mini TOR**| |[Github](http://www.github.com/neilChenXie/TOR.git) |
-|2014.7-2014.11|**Chen Account Service**| [Website](http://www.chenaccount.com) |[Github](https://github.com/neilChenXie/CAC-account-service) |
+|2014.7-2014.11|**Chen Account Service**| [Website](http://www.chenaccount.com) |[Github](https://github.com/neilChenXie/ChenAccount-CAC) |
 |2014.2-2014.5|**Weenix**| | [Detail](#Weenix) |
-|2013.11-2013.12|**Health Center System**| | |
+|2013.11-2013.12|**Health Center System**| | [Github](https://github.com/neilChenXie/Health-Center-Socket)|
 |2012.10-2012.12|**Wireless Voice Communication**| | |
 |2011.7-2011.9|**Auto-Track Car**| | | |
+
+\* *[Detail](#ProjectDetail) instead of Github,  for reserved right for Github*
 
 ##Language
 
@@ -34,16 +36,6 @@ categories: [CV]
 | Linux | Ubuntu, Debian, Angstrom, Fedora, Mint | [Detail](#Linux) |
 | Max | OSX | [Detail](#OSX) |
 | Windows | win7 | [Detail](#Windows) |
-
-##Project
-
-| Category | Name | Key words| Links |
-| --- | --- | --- | --- |
-||**Chen Account Service**|JQueryMobile, HTML, PHP, MySQL|[Website](http://www.chenaccount.com) [Github](https://github.com/neilChenXie/CAC-account-service)|
-|**Network**||||
-||**mini TOR**|C, Socket, Virtual Circuit, UDP, IP, AES|[Github](http://www.github.com/neilChenXie/TOR.git)|
-|Data Science||||
-||MapReduce based Pearson similarity calculation||[Detail]()|
 
 ##*Details*
 
@@ -324,12 +316,14 @@ ___
 
 #### Windows
 
+<a name="ProjectDetail"></a>
 ___
 
 ###*Project Detail*
 ___
 
 <a name="BSS"></a>
+
 #### Bike Safety System
 
 * *Key words:* **Node.js, HTTP, BeagleBone, Java, Localization, Serial Communication,SkyTmote, ContikiOS,  Wireless**
@@ -337,6 +331,7 @@ ___
 
 
 <a name="Weenix"></a>
+
 #### Weenix
 
 * *Key words:* **TDA**
