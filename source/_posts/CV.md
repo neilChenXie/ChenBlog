@@ -129,13 +129,15 @@ ___
 
   * change access
 
-    >r:4 w:2 x:1<br>u/g/a + r/w/x
+    >
+    r:4 w:2 x:1<br>u/g/a + r/w/x
 
 * tail
 
   * check log file
 
-    >```bash
+    >
+    ```bash
     #periodically
     tail -f $logfile
     ```
@@ -148,7 +150,8 @@ ___
 
   * work with `rm` & `xargs`:
 
-    >```bash
+    >
+    ```bash
     find /home/raven -name abc.txt | xargs rm -rf
     ```
 
