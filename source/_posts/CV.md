@@ -168,7 +168,7 @@ ___
 
   * work with `rm` & `xargs`:
 
-    >code:<br>
+    >code:
     ```bash
     find /home/raven -name abc.txt | xargs rm -rf
     ```
@@ -194,7 +194,7 @@ ___
 
 * Vim
   * Settings
-    >file:<br>
+    >file:
     ```bash
     vim /etc/vim/vimrc
     vim ~/.vim/vimrc
@@ -239,7 +239,7 @@ ___
 
   * Delete
 
-    >code:<br>
+    >code:
     ```bash
     #Delete cache and disk
     git rm
@@ -249,23 +249,23 @@ ___
 
   * Add & Commit
 
-    >code:<br>
+    >code:
+    **.gitignore** #file to specify which file or folder is not included
     ```bash
-    vim .gitignore #file to specify which file or folder is not included
     git add . / git commit -m #as usual
     ```
 
   * recover
 
-    >code:<br>
+    >code:
     ```bash
-    git log #list all commit log to check<br>
+    git log #list all commit log to check
     git checkout 0d1d7fc32 #go back to where you want
     ```
 
   * Branch
 
-    >code:<br>
+    >code:
     ```bash
     git checkout -b $newName #create new Branch
     git checkout master #back to maste
