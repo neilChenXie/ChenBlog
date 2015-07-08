@@ -59,6 +59,7 @@ ___
 #####Experience & Tricks
 
 * *configuration is normally under `/etc/`*
+
   * bash configuration
 
     >`/etc/rc.local` for every booting<br>
@@ -67,16 +68,21 @@ ___
     `setenv PATH` for unix
 
 * Port transfer
+
   * based on `iptable` in `/etc/rc.local` which runs at the **end** of booting.
 
     > `iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000`
 
 * Run in the background with CLI
+
   * `nohup` command `&`
 
 * start when bootup BeagleBone
+
   * `linux_config/chennode.sh` which should be put under `/etc/init.d/`
+
   * [init-script-template](https://github.com/fhd/init-script-template)
+
   * in case of **boot-block script**
 
     >```bash
@@ -136,6 +142,7 @@ ___
 * xargs
 
 * find
+
   * work with `rm` & `xargs`:
 
     >```bash
