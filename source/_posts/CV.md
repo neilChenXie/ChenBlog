@@ -30,7 +30,7 @@ categories: [CV]
 ##Environment
 
 | Name | Distribution | Detail |
-| --- | --- |
+| ---- | ------------ | ------ |
 | Linux | Ubuntu, Debian, Angstrom, Fedora, Mint | [Detail](#Linux) |
 | Max | OSX | [Detail](#OSX) |
 | Windows | win7 | [Detail](#Windows) |
