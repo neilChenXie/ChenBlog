@@ -13,7 +13,7 @@ categories: [Life]
 | 2013 | run | 5000m 30'| USC |
 | 2012 | swim | forg | BUPT |
 | 2003 | run | 1000m 4'30'' | SSUM |
-| 1998 | soccer | LB | elementary school
+| 1998 | soccer | LB | elementary school |
 
 ## Books
 

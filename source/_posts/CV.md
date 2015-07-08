@@ -6,18 +6,18 @@ categories: [CV]
 
 ##TimeLine
 
-|Time|Project|
-| --- | --- |
-|**Doing**| |
-|2014.12-now|**Chen-Node**|
-|  **Finished**|  |
-|2015.2-2015.5|**Bike Safety System**|
-|2014.10-2014.12|**mini TOR**|
-|2014.7-2014.11|**Chen Account Service**|
-|2014.2-2014.5|**Weenix**|
-|2013.11-2013.12|**Health Center System**|
-|2012.10-2012.12|**Wireless Voice Communication**|
-|2011.7-2011.9|**Auto-Track Car**|
+| Time | Project | Web | Detail |
+| ---- | ------- | --- | ------ |
+| **Working** | | | |
+|2014.12-now|**Chen-Node**| [Website](http://www.chen-node.com) | [Github](https://github.com/neilChenXie/ChenNode) |
+|  **Finished** | | | |
+|2015.2-2015.5|**Bike Safety System**| |[Detail](#BSS)|
+|2014.10-2014.12|**mini TOR**| |[Github](http://www.github.com/neilChenXie/TOR.git) |
+|2014.7-2014.11|**Chen Account Service**| [Website](http://www.chenaccount.com) |[Github](https://github.com/neilChenXie/CAC-account-service) |
+|2014.2-2014.5|**Weenix**| | [Detail](#Weenix) |
+|2013.11-2013.12|**Health Center System**| | |
+|2012.10-2012.12|**Wireless Voice Communication**| | |
+|2011.7-2011.9|**Auto-Track Car**| | | |
 
 ##Language
 
@@ -39,15 +39,9 @@ categories: [CV]
 
 | Category | Name | Key words| Links |
 | --- | --- | --- | --- |
-| **System** ||||
-||**Bike Safety System**|Node.js, HTTP, BeagleBone, Java, Localization, Serial Communication,SkyTmote, ContikiOS,  Wireless|[Detail](#BSS)|
-| **Website** ||||
-||**Chen-Node**|Node.js, Express, BeagleBone|[Website](http://www.chen-node.com) [Github](https://github.com/neilChenXie/ChenNode)|
 ||**Chen Account Service**|JQueryMobile, HTML, PHP, MySQL|[Website](http://www.chenaccount.com) [Github](https://github.com/neilChenXie/CAC-account-service)|
 |**Network**||||
 ||**mini TOR**|C, Socket, Virtual Circuit, UDP, IP, AES|[Github](http://www.github.com/neilChenXie/TOR.git)|
-|**OS kernel**||||
-||**Weenix**||[Detail](#Weenix)|
 |Data Science||||
 ||MapReduce based Pearson similarity calculation||[Detail]()|
 
@@ -65,8 +59,7 @@ ___
 #####Experience & Tricks
 
 * *configuration is normally under `/etc/`*
-
-    * bash configuration
+  * bash configuration
     >`/etc/rc.local` for every booting<br>
     `/etc/profile` for all users<br>`~/.bash_profile` for login users<br>
     `export PATH` ubuntu/mac<br>
@@ -74,7 +67,7 @@ ___
 
 * Port transfer
   * based on `iptable` in `/etc/rc.local` which runs at the **end** of booting.
-  > `iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000`
+    > `iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000`
 
 * Run in the background with CLI
   * `nohup` command `&`
@@ -256,5 +249,11 @@ ___
 <a name="BSS"></a>
 #### Bike Safety System
 
+* *Key words:* **Node.js, HTTP, BeagleBone, Java, Localization, Serial Communication,SkyTmote, ContikiOS,  Wireless**
+
+
+
 <a name="Weenix"></a>
 #### Weenix
+
+* *Key words:* **TDA**
