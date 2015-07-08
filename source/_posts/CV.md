@@ -71,7 +71,7 @@ ___
     #for login users
     ~/.bash_profile
     ```
-    use:<br>
+    use:
     ```bash
     #ubuntu/mac
     export PATH
@@ -82,7 +82,7 @@ ___
 
   * based on `iptable` in `/etc/rc.local` which runs at the **end** of booting.
 
-    >code:<br>
+    >code:
     ```bash
     iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000
     ```
@@ -99,7 +99,7 @@ ___
 
   * in case of **boot-block script**
 
-    >code:<br>
+    >code:
     ```bash
     #make executable
     chmod +x $filename
@@ -115,7 +115,7 @@ ___
 
   * auto-recognization
 
-    >code:<br>
+    >code:
     ```bash
     #upload
     scp /path/to/local/file username@hostname:/path/to/remote/file
@@ -129,7 +129,7 @@ ___
 
   * uncompress:
 
-    >code:<br>
+    >code:
     ```bash
     tar xvjf <file.tar.gz2>
     tar xvzf <file.tar.gz>
@@ -137,7 +137,7 @@ ___
 
   * compress:
 
-    >code:<br>
+    >code:
     ```bash
     tar cvjf <file.tar.gz2>
     tar cvzf <file.tar.gz>
@@ -147,14 +147,14 @@ ___
 
   * change access
 
-    >detail:<br>
+    >detail:
     r:4 w:2 x:1<br>u/g/a + r/w/x
 
 * tail
 
   * check log file
 
-    >code:<br>
+    >code:
     ```bash
     #periodically
     tail -f $logfile
@@ -187,68 +187,92 @@ ___
 
   * Tricks:
 
-    >shortcut:<br>
-    `C-a S` split<br>
-    `C-a c` create<br>
+    >shortcut:
+    `C-a S` split
+    `C-a c` create
     `C-a :resize 10` resize
 
 * Vim
   * Settings
     >file:<br>
-    `/etc/vim/vimrc`<br>
-    `~/.vim/vimrc`
+    ```bash
+    vim /etc/vim/vimrc
+    vim ~/.vim/vimrc
+    ```
 
   * Plugin
-    > name:<br>
-    `solarized` colorscheme<br>
-    `syntastic` syntax check<br>
-    `YouCompleteMe` autocomplete<br>
-    `Taglist/Ctags/Cscope` tags
+    > name:
+    **solarized** colorscheme
+    **syntastic** syntax check
+    **YouCompleteMe** autocomplete
+    **Taglist/Ctags/Cscope** tags
 
   * Command:
 
-    >search and replace:<br>
-    Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.<br>
-    `:%s/foo/bar/g`<br>
-    Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.<br>
-    `:s/foo/bar/g`<br>
-    Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.<br>
+    >search and replace:
+    Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
+    `:%s/foo/bar/g`
+    Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.
+    `:s/foo/bar/g`
+    Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
     `:%s/foo/bar/gci`
 
 * GDB
 * Git
-     * Download & Update
 
-        >`git clone` URL<br>
-        `git remote add` newName URL<br>
-        `git fetch` newname(origin)
-        `git merge` newname(origin)/master
+  * Download & Update
 
-     * Conflict
+    >code:<br>
+    ```bash
+    git clone $URL
+    git remote add $newName $URL
+    git fetch $newname #(origin)
+    git merge $newname #(origin)/master
+    ```
 
-        > Get more information `git config --global alias.conflicts "diff --name-only --diff-filter=U"`
+  * Conflict
 
-     * Delete
+    > Get more information:<br>
+    ```bash
+    git config --global alias.conflicts "diff --name-only --diff-filter=U"
+    ```
 
-        > `git rm` Delete cache and disk<br> `git rm --cache` Delete cache only
+  * Delete
 
-     * Add & Commit
+    >code:<br>
+    ```bash
+    #Delete cache and disk
+    git rm
+    #Delete cache only
+    git rm --cache
+    ```
 
-        >`.gitignore` file to specify which **file** or  **folder** is not included
-        `git add . / git commit -m ` as usual
+  * Add & Commit
 
-     * recover
+    >code:<br>
+    ```bash
+    vim .gitignore #file to specify which file or folder is not included
+    git add . / git commit -m #as usual
+    ```
 
-        >`git log` list all commit log to check<br>
-        `git checkout 0d1d7fc32` go back to where you want
+  * recover
 
-     * Branch
+    >code:<br>
+    ```bash
+    git log #list all commit log to check<br>
+    git checkout 0d1d7fc32 #go back to where you want
+    ```
 
-        >`git checkout -b` newName #create new Branch<br>
-         `git checkout master` #back to master<br>
-         `git merge` newName #merge to master<br>
-         `git branch -d` #delete after merge, `-D` forced<br>
-         `git branch -v` #last modification time
+  * Branch
+
+    >code:<br>
+    ```bash
+    git checkout -b $newName #create new Branch
+    git checkout master #back to maste
+    git merge $newName #merge to master
+    git branch -d #delete after merge, `-D` forced
+    git branch -v #last modification time
+    ```
 
 <a name="OSX"></a>
 
@@ -258,7 +282,8 @@ ___
 
 * homebrew
 
-    * it manage all `/usr/local/` packages*
+  * it manage all `/usr/local/` packages*
+
     >install package path: `/usr/local/Cellar/`<br>
     `brew doctor` at the beginning<br>
     `brew update` update homebrew itself<br>
@@ -267,7 +292,9 @@ ___
 #####Setting
 
 * auto-completion
+
   * BASH:
+
     >`brew install bash-completion`<br>
     add to .bash_profile
     ```bash
@@ -275,7 +302,9 @@ ___
         . $(brew --prefix)/etc/bash_completion
     fi
     ```
+
  * Git:
+
     >enter the command blow:
     ```bash
     cp ~/CLI/Template/BASH/git-completion.bash ~/.git-completion.bash
@@ -283,7 +312,9 @@ ___
     ```
 
 * atom
+
   * tricks:<br>
+
     > `crtl + shift + m` markdown file preview
 
 <a name="Windows"></a>
