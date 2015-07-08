@@ -60,6 +60,7 @@ ___
 
 * *configuration is normally under `/etc/`*
   * bash configuration
+
     >`/etc/rc.local` for every booting<br>
     `/etc/profile` for all users<br>`~/.bash_profile` for login users<br>
     `export PATH` ubuntu/mac<br>
@@ -67,6 +68,7 @@ ___
 
 * Port transfer
   * based on `iptable` in `/etc/rc.local` which runs at the **end** of booting.
+
     > `iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000`
 
 * Run in the background with CLI
@@ -76,6 +78,7 @@ ___
   * `linux_config/chennode.sh` which should be put under `/etc/init.d/`
   * [init-script-template](https://github.com/fhd/init-script-template)
   * in case of **boot-block script**
+
     >```bash
     #make executable
     chmod +x $filename
@@ -89,7 +92,8 @@ ___
 
 * scp
 
-    * auto-recognization
+  * auto-recognization
+
     >```bash
     #upload
     scp /path/to/local/file username@hostname:/path/to/remote/file
@@ -102,33 +106,38 @@ ___
 * tar
 
   * uncompress:
-  >```bash
+
+    >```bash
     tar xvjf <file.tar.gz2>
     tar xvzf <file.tar.gz>
-  ```
+    ```
 
   * compress:
-  >```bash
+
+    >```bash
     tar cvjf <file.tar.gz2>
     tar cvzf <file.tar.gz>
-  ```
+    ```
 
 * chmod
 
   * change access
-  >r:4 w:2 x:1<br>u/g/a + r/w/x
+
+    >r:4 w:2 x:1<br>u/g/a + r/w/x
 
 * tail
   * check log file
-  >```bash
-  #periodically
-  tail -f $logfile
-  ```
+
+    >```bash
+    #periodically
+    tail -f $logfile
+    ```
 
 * xargs
 
 * find
   * work with `rm` & `xargs`:
+
     >```bash
     find /home/raven -name abc.txt | xargs rm -rf
     ```
