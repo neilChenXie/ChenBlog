@@ -63,7 +63,7 @@ ___
     #for login users
     ~/.bash_profile
     ```
-    use:
+    >use:
     ```bash
     #ubuntu/mac
     export PATH
