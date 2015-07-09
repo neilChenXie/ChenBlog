@@ -1,10 +1,8 @@
-title: Rose Bowl Fireworks
+title: 10km for 10km for clean water donation
 date: 2015-07-08 23:00:22
-tags: [Life, LA, Festival]
+tags: [Life, LA, Sports]
 categories: [LA]
 ---
-
-###10km for clean water donate
 
 ![firework](/blog/photo/20150708.PNG)
 
