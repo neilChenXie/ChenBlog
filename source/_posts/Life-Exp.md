@@ -23,13 +23,14 @@ categories: [Life]
 | | the road less traveled | | |
 | |  Quirkology | | |
 | Novel||||
-||三体| 刘慈欣| | |
+| | 三体 | 刘慈欣 | |
+| | 生死疲劳 | 莫言 | | |
 
 ## Movie
 | Name | year |Director | Nation | Main actor | Main actress |
-| ---- | ---- | --------| ------ | ---------- | ------------ |
+| ---- | ---- | -------- | ------ | ---------- | ------------ |
 | The wave | 2008 |Dennis Gansel | Germeny | | |
-||||||||
+| Warrior | 2011 | Gavin O'Connor | U.S. (Mimran Schur Pictures) | Tom Hardy, Joel Edgerton |||
 
 ## Game
 
@@ -48,3 +49,19 @@ categories: [Life]
 | Main dish||||
 |Side||||
 |Vegie||||
+
+##KeyWord
+| Timeline | KeyWord | related |
+| -------- | ------- | ------- |
+| 2013 | theVaccines | |
+| 2014 | Kasabian, KaiserChief | _visa payment_,  |
+| 2015 | JakeGyllenhaal, Warrior | _Apple_, |
+
+##Email
+| UserName | Mail | related |
+| -------- | ---- | ------- |
+| chenxie121 | gmail, icloud | _LinkedIn_|
+| xcmickey | gmail, sina.cn | |
+| chenxie_neil | 163, sina.cn | _LinkedIn_ |
+| xcmickeyshop | gmail | _appleUS_, _airbnb_|
+| xiec | usc | | |
