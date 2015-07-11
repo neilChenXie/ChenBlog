@@ -68,3 +68,7 @@ ln -s [relative path to Blog/public] profile
 
     > change `/tags` to `tags`, same with `category`,`about`...<br>
     > otherwise, they won't change based on blog **root** config
+
+##Todo list
+
+* change the `home page` to `archive page` ??
