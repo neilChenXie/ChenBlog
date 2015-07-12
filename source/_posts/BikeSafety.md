@@ -1,10 +1,12 @@
 title: BikeSafety System
-date: 2015-07-06 10:22:08
+date: 2015-07-12 08:32:43
 tags: [Geek, Project]
 categories: [Project]
 ---
 
-##Overview
+##Description
+
+*Key words:* **Node.js, HTTP, BeagleBone, Java, Localization, Serial Communication,SkyTmote, ContikiOS,  Wireless**
 
 ###Hardware
 
