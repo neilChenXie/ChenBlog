@@ -17,7 +17,7 @@ categories: [CV]
 |2014.2-2014.5|**Weenix**| | [Detail](/blog/2015/07/12/Weenix/) |
 |2013.11-2013.12|**Health Center System**| | [Github](https://github.com/neilChenXie/Health-Center-Socket)|
 |2012.10-2012.12|**Wireless Voice Communication**| | |
-|2011.7-2011.9|**Auto-Track Car**| | | |
+|2012.6-2012.8|**Auto-Track Car**| | | |
 
 \* *[Detail](#ProjectDetail) instead of Github,  for reserved right for Github*
 

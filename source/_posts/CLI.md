@@ -122,6 +122,8 @@ categories: [Environment]
     >code:
     ```bash
     find /home/raven -name abc.txt | xargs rm -rf
+    #rm .DS_Store recursively
+    find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
     ```
 
 * awk
