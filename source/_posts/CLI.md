@@ -42,7 +42,7 @@ categories: [Environment]
 
   * `nohup` command `&`
 
-* start when bootup BeagleBone
+* Start when bootup BeagleBone
 
   * `linux_config/chennode.sh` which should be put under `/etc/init.d/`
 
@@ -59,6 +59,12 @@ categories: [Environment]
     #delete
     update-rc.d -f $filename remove
     ```
+
+* Add user & change password
+
+  * adduser
+
+  * passwd
 
 ###Command
 
