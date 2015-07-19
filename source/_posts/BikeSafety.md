@@ -4,7 +4,11 @@ tags: [Geek, Project]
 categories: [Project]
 ---
 
+-------------
+
 ##Description
+
+-------------
 
 *Key words:* **Node.js, HTTP, BeagleBone, Java, Localization, Serial Communication,SkyTmote, ContikiOS,  Wireless**
 
@@ -35,7 +39,11 @@ categories: [Project]
 
     > BeagleBone
 
+-----------------------
+
 ##Sensor & Access point
+
+-----------------------
 
 ### Sensor
 > * Broadcast **beacon like** packets with `sensorID` and `index` every 1 to 2 seconds with **hightest** transmit power
@@ -45,7 +53,11 @@ categories: [Project]
 
 *key words:* ***SkyTmote, ContikiOS, UART***
 
+--------------
+
 ##Base Station
+
+--------------
 
 ### BeagleBone
 
@@ -57,6 +69,9 @@ categories: [Project]
 ###Serial program
 
 >The program which receive data from **USB** with **UART** is in **JAVA**, so setup **JVM** and **Install** necessary library is import before run the excutable jar file
+
+![BikeSafetyBS](/blog/photo/BikeSafetyBS.jpg)
+
 
 ####Setup
 * How to install **Java** with **Angstrom/Debian Linux**
@@ -96,7 +111,11 @@ categories: [Project]
 
 * [Rxtx tutorial](file:///Users/chen/Dropbox/Project/Bike%20Safety/BS-BeagleBone/sky-Proj-32/TUTORIAL/RXTX/RXTX%20tutorial.html)
 
+--------
+
 ##Server
+
+--------
 
 ### tmote_server
 
