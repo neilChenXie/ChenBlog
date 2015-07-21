@@ -27,6 +27,7 @@ categories: [Life]
 | | 生死疲劳 | 莫言 | | |
 
 ## Movie
+
 | Name | year |Director | Nation | Main actor | Main actress |
 | ---- | ---- | -------- | ------ | ---------- | ------------ |
 | The wave | 2008 |Dennis Gansel | Germeny | | |
@@ -51,6 +52,7 @@ categories: [Life]
 |Vegie||||
 
 ##KeyWord
+
 | Timeline | KeyWord | related |
 | -------- | ------- | ------- |
 | 2013 | theVaccines | |
@@ -58,6 +60,7 @@ categories: [Life]
 | 2015 | JakeGyllenhaal, Warrior | _Apple_, |
 
 ##Email
+
 | UserName | Mail | related |
 | -------- | ---- | ------- |
 | chenxie121 | gmail, icloud | _LinkedIn_|

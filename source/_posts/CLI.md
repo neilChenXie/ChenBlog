@@ -4,7 +4,12 @@ tags: [Geek, Environment]
 categories: [Environment]
 ---
 
+-------
+
 ##Linux
+
+-------
+
 <a name="Linux"></a>
 
 ###Experience & Tricks
@@ -140,18 +145,38 @@ categories: [Environment]
 
 * Screen
 
-  * split terminal into multi windows
+  * create with name, change name
 
-    >[reference](http://aperiodic.net/screen/quick_reference)
+    >code:
+    ```bash
+    # create
+    screen -S foo
+    #change in session
+    C-a A foo
+    ```
+
+  * vertical split
+
+    >install:
+    ```bash
+    cvs -z3 -d:pserver:anonymous@cvs.savannah.gnu.org:/sources/screen co screen
+    curl http://old.evanmeagher.net/files/gnu-screen-vertsplit.patch > gnu-screen-vertsplit.patch
+    cd screen/src
+    patch < ../../gnu-screen-vertsplit.patch
+    ./configure –enable-locale –enable-telnet –enable-colors256 –enable-rxct_osc
+    make
+    sudo make install
+    ```
 
   * Tricks:
 
-    >shortcut:
-    `C-a S` split
-    `C-a c` create
-    `C-a :resize 10` resize
-
-
+    >[reference](http://aperiodic.net/screen/quick_reference)
+    ```bash
+    C-a S #split
+    C-a | #vertical split
+    C-a c #create
+    C-a :resize 10 #resize
+    ```
 
 * GDB
 
@@ -211,10 +236,12 @@ categories: [Environment]
     git branch -v #last modification time
     ```
 
-
+------
 
 ##OSX
 <a name="OSX"></a>
+
+------
 
 ###Tools
 
@@ -252,8 +279,12 @@ categories: [Environment]
     echo 'source ~/.git-completion.bash' >> ~/.bash_profile
     ```
 
+-----------
+
 ##Editor
 <a name="editor"></a>
+
+-----------
 
 ###Vim
 

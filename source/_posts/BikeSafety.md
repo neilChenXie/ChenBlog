@@ -46,7 +46,9 @@ categories: [Project]
 -----------------------
 
 ### Sensor
+
 > * Broadcast **beacon like** packets with `sensorID` and `index` every 1 to 2 seconds with **hightest** transmit power
+
 * Access point:
 >  * Receive packets from sensor, and extract `sensorID` and `index` from them
 >  * Comcat `bsID` and `RSSI` to extracted message and send it to BeagleBone(BaseStation) through **USB** with **UART** protocol
@@ -74,8 +76,11 @@ categories: [Project]
 
 
 ####Setup
+
 * How to install **Java** with **Angstrom/Debian Linux**
+
     * [Tutorial on BeagleBone.org](http://beagleboard.org/project/java/)
+
         >* Visit the [JDK download page](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
         >>* For Angstrom, download the `Linux ARM v6/v7 VFP Soft Float ABI` version.
         >>* For Debian, download the `Linux ARM v6/v7 Hard Float ABI` version.
@@ -86,9 +91,12 @@ categories: [Project]
         >* Perform `java -version` to verify your installation
 
 * Install **rxtx** lib on Angstrom/Debian Linux(e.g: Angstrom)
+
     * Give BeagleBone Internet connection
+
     * Install **rxtx** lib
 
+    >code:
     ```bash
     #for angstrom
     opkg update
@@ -101,6 +109,7 @@ categories: [Project]
 ####Code
 
 * The source code is a ***eclipse*** project.
+
 * Export **Runable jar file** for BeagleBone
 
 ####Run
@@ -119,8 +128,10 @@ categories: [Project]
 
 ### tmote_server
 
->* handle requests from BeagleBone BaseStation, store all information in **specific file**
+*  handle requests from BeagleBone BaseStation, store all information in **specific file**
+
 * run **localization** algorithm, which will periodically read **specific file**, when server **starts**
+
 * pushnotif, once get **POST** request from DataBase Server, send **notification** to **APN**(apple push notificaiton server).
 
 *key words:* ***Node.js, Localization, Notification, APN***

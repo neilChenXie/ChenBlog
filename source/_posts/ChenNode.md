@@ -4,19 +4,32 @@ tags: [Geek, Project]
 categories: [Project]
 ---
 
+---------------
+
 ## Description
+
+---------------
 
 * A Node.js platform can support "all" kinds of project.
 * Good separation between different projects with easy to add/delete features.
 
  *Key words:* **Node.js, Express, BeagleBone**
 
+-----------
+
 ## Hardware
 
+-----------
+
 ### BeagleBone
+
 * Debian Linux
 
+------------
+
 ## Structure
+
+------------
 
 * index.js
 > * hook **handler** to **routes**
@@ -32,20 +45,34 @@ categories: [Project]
     * folder_with_project_name
         * project_handler.js
 
+----------
+
 ## Module
+
+----------
 
 * socket.io
 * Express
 * ejs
 
+--------------------
+
 ## Supported project
 
+--------------------
+
 ### socket.io test
+
 ### profile
 Based on **Hexo** blog system,
 ### test
 
+-------------
+
 ## Experience
+
+-------------
+
 * 7/7/2015
 
   * start when bootup BeagleBone
