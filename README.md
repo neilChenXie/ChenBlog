@@ -57,7 +57,7 @@ ln -s [relative path to Blog/public] profile
 * 8/9/2015:
 	* `hexo generate` JS-YAML Error
 
-	> posts need *"title"* instead of *title*
+		> posts need *"title"* instead of *title*
 
 * 7/7/2015
 	* change to /blog
@@ -65,14 +65,14 @@ ln -s [relative path to Blog/public] profile
 * 7/6/2015
     * add photo
 
-    > put `photo` folder under `source` folder (it will be copied to public)<br>
+    	> put `photo` folder under `source` folder (it will be copied to public)<br>
     link: `/profile/photo/photoName.jpg`
 
 * 7/3/2015
     * configure `themes/next/_config.md`
 
-    > change `/tags` to `tags`, same with `category`,`about`...<br>
-    > otherwise, they won't change based on blog **root** config
+    	> change `/tags` to `tags`, same with `category`,`about`...<br>
+    	> otherwise, they won't change based on blog **root** config
 
 ##Todo list
 
