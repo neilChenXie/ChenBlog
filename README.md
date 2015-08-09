@@ -54,6 +54,11 @@ ln -s [relative path to Blog/public] profile
 
 ##Debug log
 
+* 8/9/2015:
+	* `hexo generate` JS-YAML Error
+
+	> posts need *"title"* instead of *title*
+
 * 7/7/2015
 	* change to /blog
 

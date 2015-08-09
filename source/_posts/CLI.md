@@ -214,7 +214,9 @@ categories: [Environment]
     >code:
     **.gitignore** #file to specify which file or folder is not included
     ```bash
-    git add . / git commit -m #as usual
+    #-u is used to adopt all changes to repo
+    git add -u .
+    git commit -m #as usual
     ```
 
   * recover

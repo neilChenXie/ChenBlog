@@ -1,4 +1,4 @@
-title: CV
+title: "CV"
 date: 2015-07-12 08:32:45
 tags: [CV, Geek, Overview]
 categories: [CV]
