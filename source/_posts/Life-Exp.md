@@ -31,7 +31,8 @@ categories: [Life]
 | Name | year |Director | Nation | Main actor | Main actress |
 | ---- | ---- | -------- | ------ | ---------- | ------------ |
 | The wave | 2008 |Dennis Gansel | Germeny | | |
-| Warrior | 2011 | Gavin O'Connor | U.S. (Mimran Schur Pictures) | Tom Hardy, Joel Edgerton |||
+| Warrior | 2011 | Gavin O'Connor | U.S. (Mimran Schur Pictures) | Tom Hardy, Joel Edgerton ||
+| Gran Torino | 2008 | Clint Eastwood | U.S (Warner Bros) | Clint Eastwood |||
 
 ## Game
 
@@ -57,7 +58,7 @@ categories: [Life]
 | -------- | ------- | ------- |
 | 2013 | theVaccines | |
 | 2014 | Kasabian, KaiserChief | _visa payment_,  |
-| 2015 | JakeGyllenhaal, Warrior | _Apple_, |
+| 2015 | JakeGyllenhaal, Warrior, ClintEastwood | _Apple_, |
 
 ##Email
 
