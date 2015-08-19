@@ -1,5 +1,5 @@
 title: "CV"
-date: 2015-07-12 08:32:45
+date: 2015-08-19 08:32:45
 tags: [CV, Geek, Overview]
 categories: [CV]
 ---
@@ -23,23 +23,16 @@ categories: [CV]
 
 ##Language
 
-- [x] Node.js
-- [x] Python
+- [x] [Node.js](https://github.com/neilChenXie/ChenNode)
+- [x] [Python](https://github.com/neilChenXie/study_chenPython)
 - [x] Java
 - [x] C++
 - [x] C
 
-##Environment
+##Environment [Detail](/blog/2015/08/19/CLI/)
 
-| Name | Distribution | Detail |
-| ---- | ------------ | ------ |
-| Linux | Ubuntu, Debian, Angstrom, Fedora, Mint | [Detail](/blog/2015/07/12/CLI/#Linux) |
-| Max | OSX | [Detail](/blog/2015/07/12/CLI/#OSX) |
-| Windows | win7 | [Detail](#Windows) |
-
-##Editor
-
-| Name | Detail |
-| ---- | ------ |
-|  Vim | [Github](https://github.com/neilChenXie/.vim_v2) |
-| Atom | Detail |
+| Name | Distribution |
+| ---- | ------------ |
+| Linux | Ubuntu, Debian, Angstrom, Fedora, Mint |
+| Mac | OSX |
+| Windows | win7 |

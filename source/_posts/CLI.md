@@ -1,299 +1,309 @@
 title: CLI
-date: 2015-07-12 08:32:42
+date: 2015-08-19 08:32:42
 tags: [Geek, Environment]
 categories: [Environment]
 ---
 
--------
-
-##Linux
-
--------
+## Linux
 
 <a name="Linux"></a>
 
-###Experience & Tricks
+### Command
 
-* *configuration is normally under `/etc/`*
+#### scp
 
-  * bash configuration
+```bash
+#upload
+scp /path/to/local/file username@hostname:/path/to/remote/file
+#transfer
+scp username1@hostname1:/path/to/file username2@hostname2:/path/to/other/file
+#download
+scp username@hostname:/path/to/remote/file /path/to/local/file
+```
 
-    >file:<br>
-    ```bash
-    #for every booting
-    /etc/rc.local
-    #for all users
-    /etc/profile
-    #for login users
-    ~/.bash_profile
-    ```
-    >use:
-    ```bash
-    #ubuntu/mac
-    export PATH
-    #unix
-    setenv PATH
-    ```
-* Port transfer
+#### tar
 
-  * based on `iptable` in `/etc/rc.local` which runs at the **end** of booting.
+```bash
+#uncompress
+tar xvjf <file.tar.gz2>
+tar xvzf <file.tar.gz>
+#compress
+tar cvjf <file.tar.gz2>
+tar cvzf <file.tar.gz>
+```
 
-    >code:
-    ```bash
-    iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000
-    ```
+#### chmod
 
-* Run in the background with CLI
+```
+r:4 w:2 x:1<br>u/g/a + r/w/x
+```
 
-  * `nohup` command `&`
+#### tail
 
-* Start when bootup BeagleBone
+```bash
+#check log file
+#periodically
+tail -f $logfile
+```
 
-  * `linux_config/chennode.sh` which should be put under `/etc/init.d/`
+#### xargs
 
-  * [init-script-template](https://github.com/fhd/init-script-template)
+```
+TBA
+```
 
-  * in case of **boot-block script**
+#### find
 
-    >code:
-    ```bash
-    #make executable
-    chmod +x $filename
-    #create
-    update-rc.d $filename defaults
-    #delete
-    update-rc.d -f $filename remove
-    ```
+```bash
+#Recursive delete work with rm & xargs
+find /home/raven -name abc.txt | xargs rm -rf
 
-* Add user & change password
+#rm .DS_Store recursively
+find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+```
 
-  * adduser
+#### awk
 
-  * passwd
+```
+TBA
+```
 
-###Command
+### Conclusion
 
-* scp
+#### configuration
 
-  * auto-recognization
+```bash
+#normally under `/etc/`, mostly set environment var and run applications
 
-    >code:
-    ```bash
-    #upload
-    scp /path/to/local/file username@hostname:/path/to/remote/file
-    #transfer
-    scp username1@hostname1:/path/to/file username2@hostname2:/path/to/other/file
-    #download
-    scp username@hostname:/path/to/remote/file /path/to/local/file
-    ```
+#bash configuration
+##for every booting
+/etc/rc.local
+##for all users
+/etc/profile
+##for login users
+~/.bash_profile
 
-* tar
+#set environment var
+##ubuntu/mac
+export PATH
+##unix
+setenv PATH
+```
 
-  * uncompress:
+#### BeagleBone related
 
-    >code:
-    ```bash
-    tar xvjf <file.tar.gz2>
-    tar xvzf <file.tar.gz>
-    ```
+```bash
+# run application without graphic interface, in the background when bootup
 
-  * compress:
+## Run in the background with CLI
+nohup node index.js &
 
-    >code:
-    ```bash
-    tar cvjf <file.tar.gz2>
-    tar cvzf <file.tar.gz>
-    ```
+## Run when bootup
 
-* chmod
+#make executable
+chmod +x $filename
+#create
+update-rc.d $filename defaults
+#delete
+update-rc.d -f $filename remove
+```
 
-  * change access
+_notice:_
 
-    >detail:
-    r:4 w:2 x:1<br>u/g/a + r/w/x
+[1] don't write **boot-blocking** script
 
-* tail
+_reference:_
 
-  * check log file
+[1] [init-script-template](https://github.com/fhd/init-script-template)
 
-    >code:
-    ```bash
-    #periodically
-    tail -f $logfile
-    ```
+[2] `linux_config/chennode.sh` should be put under `/etc/init.d/`
 
-* xargs
+### Tricks
 
-  * TBA
+#### change wireless card tx power
 
-* find
+[reference](http://www.hacking-tutorial.com/hacking-knowledge/increase-wifi-signal-strength-tx-power-on-kali-linux/#sthash.OQF8aaei.dpbs)
 
-  * **Recursive delete** work with `rm` & `xargs`:
 
-    >code:
-    ```bash
-    find /home/raven -name abc.txt | xargs rm -rf
-    #rm .DS_Store recursively
-    find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
-    ```
+#### Port transfer
 
-* awk
+```bash
+#based on `iptable` in `/etc/rc.local` which runs at the **end** of booting.
+iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000
+```
 
-  * TBA
 
-###Tools
+#### Add user & change password
 
-* Screen
+```bash
+adduser
+passwd
+ ```
 
-  * create with name, change name
-
-    >code:
-    ```bash
-    # create
-    screen -S foo
-    #change in session
-    C-a A foo
-    ```
-
-  * vertical split
-
-    >install:
-    ```bash
-    cvs -z3 -d:pserver:anonymous@cvs.savannah.gnu.org:/sources/screen co screen
-    curl http://old.evanmeagher.net/files/gnu-screen-vertsplit.patch > gnu-screen-vertsplit.patch
-    cd screen/src
-    patch < ../../gnu-screen-vertsplit.patch
-    ./configure –enable-locale –enable-telnet –enable-colors256 –enable-rxct_osc
-    make
-    sudo make install
-    ```
-
-  * Tricks:
-
-    >[reference](http://aperiodic.net/screen/quick_reference)
-    ```bash
-    C-a S #split
-    C-a | #vertical split
-    C-a c #create
-    C-a :resize 10 #resize
-    ```
-
-* GDB
-
-* Git
-
-  * Download & Update
-
-    >code:<br>
-    ```bash
-    git clone $URL
-    git remote add $newName $URL
-    git fetch $newname #(origin)
-    git merge $newname #(origin)/master
-    ```
-
-  * Conflict
-
-    > Get more information:<br>
-    ```bash
-    git config --global alias.conflicts "diff --name-only --diff-filter=U"
-    ```
-
-  * Delete
-
-    >code:
-    ```bash
-    #Delete cache and disk
-    git rm
-    #Delete cache only
-    git rm --cache
-    ```
-
-  * Add & Commit
-
-    >code:
-    **.gitignore** #file to specify which file or folder is not included
-    ```bash
-    #-u is used to adopt all changes to repo
-    git add -u .
-    git commit -m #as usual
-    ```
-
-  * recover
-
-    >code:
-    ```bash
-    git log #list all commit log to check
-    git checkout 0d1d7fc32 #go back to where you want
-    ```
-
-  * Branch
-
-    >code:
-    ```bash
-    git checkout -b $newName #create new Branch
-    git checkout master #back to maste
-    git merge $newName #merge to master
-    git branch -d #delete after merge, `-D` forced
-    git branch -v #last modification time
-    ```
-
-------
-
-##OSX
+## OSX
 <a name="OSX"></a>
 
-------
+### Tools
 
-###Tools
+#### homebrew
 
-* homebrew
+```bash
+#it manage all `/usr/local/` packages*
+#install package path: `/usr/local/Cellar/`
+brew doctor #at the beginning
+brew update #update homebrew itself
+brew upgrade #update installed package
+```
 
-  * it manage all `/usr/local/` packages*
+### Setting
 
-    >install package path: `/usr/local/Cellar/`
-    ```bash
-    brew doctor #at the beginning
-    brew update #update homebrew itself
-    brew upgrade #update installed package
-    ```
+#### auto-completion
 
-###Setting
+```bash
+#bash
+brew install bash-completion
+#add to .bash_profile
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
 
-* auto-completion
+#Git
+cp ~/CLI/Template/BASH/git-completion.bash ~/.git-completion.bash
+echo 'source ~/.git-completion.bash' >> ~/.bash_profile
+```
 
-  * BASH:
+## Tools
 
-    >auto-completion:
-    ```bash
-    brew install bash-completion
-    #add to .bash_profile
-    if [ -f $(brew --prefix)/etc/bash_completion ]; then
-        . $(brew --prefix)/etc/bash_completion
-    fi
-    ```
+### Screen
 
- * Git:
+#### vertical split
 
-    >enter the command blow:
-    ```bash
-    cp ~/CLI/Template/BASH/git-completion.bash ~/.git-completion.bash
-    echo 'source ~/.git-completion.bash' >> ~/.bash_profile
-    ```
+```bash
+#need patch
+cvs -z3 -d:pserver:anonymous@cvs.savannah.gnu.org:/sources/screen co screen
+curl http://old.evanmeagher.net/files/gnu-screen-vertsplit.patch > gnu-screen-vertsplit.patch
+cd screen/src
+patch < ../../gnu-screen-vertsplit.patch
+./configure –enable-locale –enable-telnet –enable-colors256 –enable-rxct_osc
+make
+sudo make install
+```
 
------------
+#### basic operation
 
-##Editor
+```bash
+# create
+screen -S foo
+# change name in session
+C-a A foo
+
+# split
+C-a S
+
+#vertical split
+C-a |
+
+#create
+C-a c
+
+#resize
+C-a :resize 10
+
+#close split
+C-a X
+
+#detach
+C-a d
+```
+
+[reference](http://aperiodic.net/screen/quick_reference)
+
+### GDB
+
+### Git
+
+#### Download & Update
+
+```bash
+git clone $URL
+git remote add $newName $URL
+git fetch $newname #(origin)
+git merge $newname #(origin)/master
+```
+
+#### Conflict
+
+```bash
+#get more information
+git config --global alias.conflicts "diff --name-only --diff-filter=U"
+
+#merge tool
+git mergetool origin master
+```
+
+#### Delete
+
+```bash
+#Delete cache and disk
+git rm
+#Delete cache only
+git rm --cache
+```
+
+#### Add & Commit
+
+```bash
+#.gitignore #file to specify which file or folder is not included
+#-u is used to adopt all changes to repo
+git add -u .
+git commit -m #as usual
+```
+
+#### recover
+
+```bash
+git log #list all commit log to check
+git checkout 0d1d7fc32 #go back to where you want
+```
+
+#### Branch
+
+```bash
+git checkout -b $newName #create new Branch
+git checkout master #back to maste
+git merge $newName #merge to master
+git branch -d #delete after merge, `-D` forced
+git branch -v #last modification time
+```
+
+#### Add RSA SSH key
+
+[reference](https://help.github.com/articles/generating-ssh-keys/)
+
+## Editor
 <a name="editor"></a>
 
------------
+### Vim
 
-###Vim
+[Github](https://github.com/neilChenXie/.vim_v2)
 
-* [Github](https://github.com/neilChenXie/.vim_v2)
+### Atom
 
-###Atom
 <a name="atom"></a>
-  * tricks:
 
-    > `crtl + shift + m` markdown file preview
+#### Plugin List:
+
+* vim-mode, vim-mode-visual-block
+
+* term2, script
+
+* project-manager
+
+* git-plus
+    >need set RSA SSH key to make git push work without entering username and password.
+
+#### tricks:
+
+* hotkeys
+
+    >`crtl + shift + m` markdown file preview

@@ -4,20 +4,8 @@ tags: [Geek, Project]
 categories: [Project]
 ---
 
------------------
-
 ##Electrical Unit
-
------------------
-
------------------
 
 ##Circuit Design
 
------------------
-
------------------
-
 ##Tracking Logic
-
-----------------
