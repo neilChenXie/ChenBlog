@@ -172,6 +172,10 @@ cp ~/CLI/Template/BASH/git-completion.bash ~/.git-completion.bash
 echo 'source ~/.git-completion.bash' >> ~/.bash_profile
 ```
 
+###Web development tool install
+
+[reference](http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/)
+
 ## Tools
 
 ### Screen

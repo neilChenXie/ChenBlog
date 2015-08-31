@@ -9,6 +9,7 @@ categories: [CV]
 | Time | Project | Web | Detail |
 | ---- | ------- | --- | ------ |
 | **Working** | | | |
+|2015.08-now|**ChenACount v2.0**|  | [Github](https://github.com/neilChenXie/CAC_v2) |
 |2014.12-now|**Chen-Node**| [Website](http://www.chen-node.com) | [Github](https://github.com/neilChenXie/ChenNode) |
 |  **Finished** | | | |
 |2015.2-2015.5|**Bike Safety System**| |[Detail](/blog/2015/07/12/BikeSafety/)|
@@ -29,10 +30,10 @@ categories: [CV]
 - [x] C++
 - [x] C
 
-##Environment [Detail](/blog/2015/08/19/CLI/)
+##Environment
 
-| Name | Distribution |
-| ---- | ------------ |
-| Linux | Ubuntu, Debian, Angstrom, Fedora, Mint |
-| Mac | OSX |
-| Windows | win7 |
+| Name | Distribution | Detail |
+| ---- | ------------ | ------ |
+| Linux | Ubuntu, Debian, Angstrom, Fedora, Mint | [Detail](/blog/2015/08/19/CLI/#Linux) |
+| Mac | OSX | [Detail](/blog/2015/08/19/CLI/#OSX) |
+| Windows | win7 | | |
