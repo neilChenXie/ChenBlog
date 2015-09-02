@@ -21,7 +21,7 @@ scp username1@hostname1:/path/to/file username2@hostname2:/path/to/other/file
 scp username@hostname:/path/to/remote/file /path/to/local/file
 ```
 
-#### tar
+#### tar & zip/unzip
 
 ```bash
 #uncompress
@@ -30,6 +30,13 @@ tar xvzf <file.tar.gz>
 #compress
 tar cvjf <file.tar.gz2>
 tar cvzf <file.tar.gz>
+```
+
+```bash
+#zip options archive inpath inpath ...
+zip -r cac.zip cac
+#unzip [-x xfile(s) ...] [-d exdir]
+unzip cac.zip -d cac/
 ```
 
 #### chmod
