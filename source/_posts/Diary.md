@@ -4,39 +4,51 @@ categories: [Life]
 date: 2015-08-31 10:26:41
 ---
 
-## 2015-0901
+## 2015-09-01
 
 * [x]
 
-### Study
+* Study
 
-* Trie
+    > Trie
 
-### Project
+* Project
 
-* CAC_v1
+    > CAC_v1: fix phone number bug, change login page
 
-    > fix phone number bug, change login page
+* Exercise
 
-### Exercise
+    > Run 7.5 km
 
-* Run 7.5 km
+## 2015-08-31
+
+* [ ]
+
+* Study
+
+    > Pythonic
+
+* Exercise
+
+    > Run 5 km
 
 ## 2015-08-30
 
 * [x]
 
-### Study
+* Study
 
-* KMP algorithm
+    > KMP algorithm
 
-* Heap data structure
+    > Heap data structure
 
-### Project
+* Project
 
-* CAC_v2
+    > CAC_v2: more time to know IOS and design Node.js architecture
 
-    > more time to know IOS and design Node.js architecture
+* Exercise
+
+    >Run 7 km
 
 ## 2015-0829
 
