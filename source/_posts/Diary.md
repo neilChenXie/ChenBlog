@@ -4,6 +4,62 @@ categories: [Life]
 date: 2015-08-31 10:26:41
 ---
 
+## 2015-09-07
+
+* []
+
+* Study
+
+* Project
+
+    > node.js: Passport.js, Morgan.js, MongoDB, Schema, nodemon
+
+* Exercise
+
+    > Run 5 km
+
+## 2015-09-06
+
+* [x]
+
+## 2015-09-05
+
+* []
+
+* Exercise
+
+    > Run:10km
+
+## 2015-09-04
+
+* [x]
+
+## 2015-09-03
+
+* [x]
+
+* Study
+
+    > LRU: Double link list with address Hash table
+
+* Project
+
+* Exercise
+
+    > Run: 5km
+
+## 2015-09-02
+
+* []
+
+* Study
+
+    > Pyhton-Trie: {} in {}
+
+* Exercise
+
+    > Run 5 km
+
 ## 2015-09-01
 
 * [x]
@@ -22,7 +78,7 @@ date: 2015-08-31 10:26:41
 
 ## 2015-08-31
 
-* [ ]
+* []
 
 * Study
 
