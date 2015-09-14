@@ -4,6 +4,57 @@ categories: [Life]
 date: 2015-08-31 10:26:41
 ---
 
+## 2015-09-11
+
+* [x]
+
+* Study
+
+* Project
+
+    >ChenNode: Node.js util module.
+
+## 2015-09-10
+
+* [x]
+
+* Study
+
+    > Japanese: a,i,u,e,o; ai, iu, ao, ue.
+
+* Project
+
+    > ChenNode: Promise module & theory, Node.js MVC with MySQL using Promise
+
+## 2015-09-09
+
+* []
+
+* Study
+
+* Project
+
+    > ChenNode: bcrypt
+
+* Exercise
+
+## 2015-09-08
+
+* []
+
+* Study
+
+    > Binary Search Conclusion
+
+* Project
+
+    > node.js: Passport.js, connect-flash, session
+    > todo: deserializeUser, how to use
+
+* Exercise
+
+    > Run 5 km
+
 ## 2015-09-07
 
 * []
@@ -12,7 +63,7 @@ date: 2015-08-31 10:26:41
 
 * Project
 
-    > node.js: Passport.js, Morgan.js, MongoDB, Schema, nodemon
+    > node.js: Morgan.js, MongoDB, Schema, nodemon
 
 * Exercise
 
