@@ -12,7 +12,7 @@ categories: [CV]
 |2015.08-now|**ChenACount v2.0**|  | [Github](https://github.com/neilChenXie/CAC_v2) |
 |2014.12-now|**Chen-Node**| [Website](http://www.chen-node.com) | [Github](https://github.com/neilChenXie/ChenNode) |
 |  **Finished** | | | |
-|2015.2-2015.5|**Bike Safety System**| |[Detail](/blog/2015/07/12/BikeSafety/)|
+|2015.2-2015.5|**Indoor Anti-Theif**| |[Detail](/blog/2015/07/12/IndoorAntiTheif/)|
 |2014.10-2014.12|**mini TOR**| |[Github](http://www.github.com/neilChenXie/TOR.git) |
 |2014.7-2014.11|**Chen Account Service**| [Website](http://www.chenaccount.com) |[Github](https://github.com/neilChenXie/ChenAccount-CAC) |
 |2014.2-2014.5|**Weenix**| | [Detail](/blog/2015/07/12/Weenix/) |
