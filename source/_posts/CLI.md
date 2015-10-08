@@ -225,6 +225,10 @@ C-a X
 
 #detach
 C-a d
+
+#recover
+screen -ls #check exist socket
+screen -r $name #reattach
 ```
 
 [reference](http://aperiodic.net/screen/quick_reference)

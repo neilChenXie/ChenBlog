@@ -70,7 +70,7 @@ categories: [Life]
 | UserName | Mail | related |
 | -------- | ---- | ------- |
 | chenxie121 | g, ic | _LinkedIn_, _connectSC_ |
-| xcmickey | g, sicn | |
+| xcmickey | g, sicn | zipcar(xcneil) |
 | chenxie_neil | 163, sicn | _LinkedIn_ |
 | xcmickeyshop | g | _appleUS_, _airbnb_|
 | xiec | usc | | |
