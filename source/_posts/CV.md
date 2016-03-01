@@ -9,7 +9,8 @@ categories: [CV]
 | Time | Project | Web | Detail |
 | ---- | ------- | --- | ------ |
 | **Working** | | | |
-|2015.08-now|**ChenACount v2.0**|  | [Github](https://github.com/neilChenXie/CAC_v2) |
+|2016.02-2016.03| **PDF auto add links** | sekorm | acrobat JavaScript based extension |
+|2016.01-2016.02| **联系人锁定** | sekorm | one-page application |
 |2014.12-now|**Chen-Node**| [Website](http://www.chen-node.com) | [Github](https://github.com/neilChenXie/ChenNode) |
 |  **Finished** | | | |
 |2015.2-2015.5|**Indoor Anti-Theif**| |[Detail](/blog/2015/07/12/IndoorAntiTheif/)|

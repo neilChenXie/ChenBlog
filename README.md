@@ -77,3 +77,12 @@ ln -s [relative path to Blog/public] profile
 ##Todo list
 
 * change the `home page` to `archive page` ??
+
+## Reference
+
+### Hexo command
+
+```bash
+
+```
+[Reference](https://hexo.io/docs/commands.html)
